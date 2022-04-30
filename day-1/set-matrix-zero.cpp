@@ -1,4 +1,8 @@
+// Problem link
 // https://leetcode.com/problems/set-matrix-zeroes/submissions/
+
+
+// Solution
 
 class Solution {
 public:
@@ -7,6 +11,7 @@ public:
         int m=matrix.size();
         int n= matrix[0].size();
         
+        //inserting rows having 0 in s1 and columns having 0 in s4
         for(int i=0;i<m;i++)
         {
             for(int j=0;j<n;j++)
@@ -20,6 +25,8 @@ public:
         }
         
         set<int> :: iterator itr;
+        
+        // traversing through s1 and s4 to set value 0 in matrix
         
         for(itr=s1.begin();itr!=s1.end();itr++)
         {
