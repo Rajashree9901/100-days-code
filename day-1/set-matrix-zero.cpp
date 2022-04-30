@@ -2,7 +2,7 @@
 // https://leetcode.com/problems/set-matrix-zeroes/submissions/
 
 
-// Solution
+// Solution 1: using sets/extra space
 
 class Solution {
 public:
@@ -41,3 +41,6 @@ public:
         }
     }
 };
+
+
+
