@@ -17,3 +17,20 @@ public:
         return -1;
     }
 };
+
+// Solution 2: Using map to store frequency
+
+class Solution {
+public:
+    int findDuplicate(vector<int>& nums) {
+        int n=nums.size();
+        map<int,int> m;
+        for(int i=0;i<n;i++)
+        {
+            m[nums[i]]++;           //increasing frequency
+            if(m[nums[i]]==2)
+                return nums[i];
+        }
+        return -1;
+    }
+};
