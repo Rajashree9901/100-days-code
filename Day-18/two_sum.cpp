@@ -1,6 +1,6 @@
 // Problem link- https://leetcode.com/problems/two-sum/
 
-// Solution -
+// Solution - Time complexity: O(n) 
 
 class Solution {
 public:
